@@ -6,7 +6,7 @@
 import argparse, socket
 from datetime import datetime
 
-MAX_BYTES = 65535
+MAX_BYTES = 65535.00
 
 def server(port):
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)

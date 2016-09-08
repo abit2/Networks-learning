@@ -1,2 +1,2 @@
 # Networks-learning
-tutorials and other practice examples to learn network programming. :D
+tutorials and other kind of practice examples to learn network programming. :D
