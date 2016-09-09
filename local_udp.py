@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 # Foundations of Python Network Programming, Third Edition
-# https://github.com/brandon-rhodes/fopnp/blob/m/py3/chapter02/udp_local.py
 # UDP client and server on localhost
 
 import argparse, socket
 from datetime import datetime
 
-MAX_BYTES = 65535.00
+MAX_BYTES = 65535
 
 def server(port):
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
