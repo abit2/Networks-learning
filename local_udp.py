@@ -6,7 +6,7 @@ import argparse, socket
 from datetime import datetime
 
 MAX_BYTES = 65535
-
+'''This is a server receiving packets from client side'''
 def server(port):
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sock.bind(('127.0.0.1', port))
@@ -19,6 +19,7 @@ def server(port):
         data = text.encode('ascii')
         sock.sendto(data, address)
 
+'''This is a client receiving response from server side'''
 def client(port):
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     text = 'The time is {}'.format(datetime.now())
